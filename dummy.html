@@ -1,0 +1,156 @@
+/*------ Tablet media Query ------*/
+@media screen and (min-width:769px) {
+.header,
+.main-nav{
+    display: flex;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+    .header{
+        width:80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+}
+#hero {
+    min-height:500px;
+}
+.hero h2 {
+    font-size:2.1rem;
+}
+.container {
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1 / 3;
+}
+.two{
+    grid-column: 1/2
+    
+}
+.three{
+    grid-column: 2/3
+    
+     
+}
+.four{
+    grid-column: 1/3
+     
+}
+.five{
+    grid-column: 1/3
+     
+}
+.six{
+    grid-column: 1/2
+     
+     
+}
+.seven{
+    grid-column: 2/3
+    
+     
+}
+/*------ End of tablet media query ------*/
+
+
+/*------ Desktop media query ------*/
+@media screen and (min-width: 1025px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.container{
+    grid-template-columns:1fr 1fr 1fr;
+}
+.one {
+    grid-column: 1 / 4;
+}
+.two{
+grid-column: 1/3;
+}
+.three{
+    grid-column: 3/4;
+}
+.four{
+    grid-column: 1/4;
+}
+.five{grid-column: 1/4;
+
+}
+.six{ grid-column: 1/2;
+
+}
+.seven{ grid-column: 2/4;
+
+}
+
+/*------ End desktop media query ------*/
+
+/*------ Large display media query ------*/
+@media screen and (min-width: 1850px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*------ End Large display media query ------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet media query****************/
+@media screen and (min-width: 764px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+        grid-gap:20px;
+        padding:20px;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        
+        .header{
+            width:80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+}
+
+/* desktop media query****************/
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(230px, 1fr));
+        grid-gap:20px;
+        padding:20px;
+        
+        .header{
+            flex-direction: column;
+            align-items: center;
+            .header{
+                width:80%;
+                margin: 0 auto;
+                max-width: 1150px;
+            }
+        }
+    }
+}
+/*------ End Large display media query ------*/
+
+
+<a href="https://santatracker.google.com" target="_blank">Santa trackr</a>

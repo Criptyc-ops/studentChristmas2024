@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 /******** fonts ********/ 
+.main-nav a{
+    font-size:.99em
+}
+.main-nav{
+    margin-top:5px;
+}
+.main-nav a{
+    padding:10px,15px;
+    text-transform: uppercase;
+    text-align:right;
+    display: block;
+}
+ul{
+    list-style:none;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: minmax(230px, 1fr);
@@ -9,6 +25,7 @@
 }
 
 .logo{
+    display: inline;
     font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -17,6 +34,8 @@
   
 }
 .header{
+    display: flex;
+    flex-direction: column;
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #13120f;
@@ -61,39 +80,6 @@ button{
 
 }
 
-.block_one {
-    display:flex;
-
-}
-.two{
-    padding:10%
-}
-.four p {
-    color:#bf3100;
-    font-family: "Flavors", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size:x-large;
-  
-}
-.five p{
-    color:#13120F;
-    font-family: "Jolly Lodger", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size:xx-large;
-  background-color: #2a4454aa;
-  padding: 1%;
-  
-}
-.seven p{
-    color:#2a4454;
-    font-family: "Nosifer", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:large;
-    padding: 1%;
-}
 /*------ Responsive images ------*/
 
 img {
@@ -104,8 +90,6 @@ img {
         CSS GRID RULES
 =====================================*/
 
-
-
 /* tablet media query****************/
 @media screen and (min-width: 764px) {
     .wrapper {
@@ -113,6 +97,17 @@ img {
         grid-template-columns: repeat(2, minmax(230px, 1fr));
         grid-gap:20px;
         padding:20px;
+    }
+    .header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        .header{
+            width:80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
     }
 }
 
@@ -123,8 +118,17 @@ img {
         grid-template-columns: repeat(3, minmax(230px, 1fr));
         grid-gap:20px;
         padding:20px;
+        
+        .header{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .header{
+                width:80%;
+                margin: 0 auto;
+                max-width: 1150px;
+            }
+        }
     }
 }
 /*------ End Large display media query ------*/
-
-
