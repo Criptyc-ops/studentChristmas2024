@@ -25,7 +25,7 @@ ul{
 }
 
 .logo{
-    display: inline;
+    display: grid;
     font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
